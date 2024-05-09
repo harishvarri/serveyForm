@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            survey form
+        </title>
+        <link rel="stylesheet" type="text/css" href="form.css">
+    </head>
+    <body>
+        <h1>
+            harish survey form
+        </h1>
+        <!--create form-->
+        <form id="form">
+            <!--details-->
+            <div class="form-control">
+                <label for="name" id="label-name" >NAME</label>
+                <input type="text" id="name" placeholder="enter the name"/>
+            </div>
+            <div class="form-control">
+                <label for="email" id="label-email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email"/>
+            </div>
+            <div class="form-control">
+             <label for="age" id="label-age" >AGE</label>
+             <input type="text" id="age" placeholder="enter the age"/>
+            </div>
+            <div class="form-control">
+                <label for="role" id="label-role">Which option best describes you?</label>
+                <!--dropdown box-->
+                <select name="role" id="role">
+                    <option value="student">Student</option>
+                    <option value="intern">Intern</option>
+                    <option value="professional">Professional</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label>Would you recommend GFG to a frend </label>
+                <label for="recommend-1">
+                    <input type="radio" id="recommend-1" name="recommend" />Yes</input>
+                </label>
+                <label for="recommend-2">
+                    <input type="radio" id="recommend-2" name="recommend" />No</input>
+                </label>
+                <label for="recommend-3">
+                    <input type="radio" id="recommend-3" name="recommend" />Maybe</input>
+                </label>
+            </div>
+            <div class="form-control">
+                <label>Languages and frameworks  known</label>
+                <!--input checkbox type-->
+                <label for="inp-1">
+                    <input type="checkbox" id="int-1"name="inp" >C</input>
+                </label>
+                <label for="inp-1">
+                    <input type="checkbox" id="int-1" name="inp">C</input>
+                </label>
+                <label for="inp-2">
+                    <input type="checkbox" id="int-2"name="inp" >C++</input>
+                </label>
+                <label for="inp-3">
+                    <input type="checkbox" id="int-3" name="inp">C#</input>
+                </label>
+                <label for="inp-4">
+                    <input type="checkbox" id="int-4" name="inp">Java</input>
+                </label>
+                <label for="inp-5">
+                    <input type="checkbox" id="int-5" name="inp">Python</input>
+                </label>
+                <label for="inp-6">
+                    <input type="checkbox" id="int-6" name="inp">Javascript</input>
+                </label>
+                <label for="inp-7">
+                    <input type="checkbox" id="int-1" name="inp">React</input>
+                </label>
+            </div>
+            <div class="form-control">
+                <label for="comment">Any comments or Suggestions</label>
+                <!--multiline comment section-->
+                <textarea name="comment" id="comment" placeholder="enter the commenthere"></textarea>
+            </div>
+            <button type="submit" value="submit">Submit</button>
+        </form>
+
+    </body>
+</html>
